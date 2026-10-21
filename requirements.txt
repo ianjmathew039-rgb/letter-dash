@@ -1,0 +1,27 @@
+LETTER DASH — Runtime Requirements
+
+This project uses JavaScript/TypeScript and Node.js. It is NOT a Python
+project, so do not install this file with
+pip install -r requirements.txt.
+
+Prerequisites: - Node.js: current supported LTS release recommended -
+npm: included with Node.js - Git: required only to clone the repository
+
+Backend dependencies are declared in: - backend/package.json -
+backend/package-lock.json
+
+Frontend dependencies are declared in: - frontend/package.json -
+frontend/package-lock.json
+
+Install backend dependencies: cd backend npm install
+
+Install frontend dependencies: cd frontend npm install
+
+Build the frontend: cd frontend npm run build
+
+Use npm ci instead of npm install when you want a clean, lockfile-based
+installation in CI or another reproducible environment.
+
+Note: In a Node.js project, package.json and package-lock.json are the
+authoritative dependency manifests. This file is a human-readable
+prerequisite summary only.
